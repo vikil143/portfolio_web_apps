@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vikil Lakkavatri — Senior Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: 'hsl(0 0% 4%)',
+          surface: 'hsl(0 0% 8%)',
+          'text-primary': 'hsl(0 0% 96%)',
+          muted: 'hsl(0 0% 53%)',
+          stroke: 'hsl(0 0% 12%)',
+        },
+        fontFamily: {
+          body: ['Inter', 'sans-serif'],
+          display: ['"Instrument Serif"', 'serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  :root {
+    --bg: 0 0% 4%;
+    --surface: 0 0% 8%;
+    --text: 0 0% 96%;
+    --muted: 0 0% 53%;
+    --stroke: 0 0% 12%;
+  }
+  html, body { background: hsl(var(--bg)); color: hsl(var(--text)); }
+  body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+  ::selection { background: #4E85BF; color: #fff; }
+
+  .accent-gradient { background: linear-gradient(90deg, #89AACC 0%, #4E85BF 100%); }
+  .accent-text { background: linear-gradient(90deg, #89AACC 0%, #4E85BF 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  @keyframes scroll-down { 0% { transform: translateY(-100%); } 100% { transform: translateY(200%); } }
+  .animate-scroll-down { animation: scroll-down 1.5s ease-in-out infinite; }
+
+  @keyframes role-fade-in { 0% { opacity: 0; transform: translateY(8px); } 100% { opacity: 1; transform: translateY(0); } }
+  .animate-role-fade-in { animation: role-fade-in 0.4s ease-out; }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .animate-gradient { background-size: 200% 200%; animation: gradient-shift 6s ease infinite; }
+
+  @keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1);} 50% { opacity: 0.5; transform: scale(0.85);} }
+  .pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+
+  /* Hero animated grid backdrop */
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(137, 170, 204, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(137, 170, 204, 0.06) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 100%);
+  }
+  .glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  /* Marquee */
+  .marquee { display: flex; overflow: hidden; gap: 3rem; }
+  .marquee-track { display: flex; gap: 3rem; flex-shrink: 0; animation: marquee 40s linear infinite; }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+
+  /* Halftone overlay */
+  .halftone {
+    background-image: radial-gradient(circle, #000 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: hsl(var(--bg)); }
+  ::-webkit-scrollbar-thumb { background: hsl(var(--stroke)); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: hsl(0 0% 18%); }
+
+  /* Diagonal stripe placeholder */
+  .stripe-placeholder {
+    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0 12px, transparent 12px 24px);
+  }
+
+  /* Gradient border helper */
+  .grad-border { position: relative; }
+  .grad-border::before {
+    content: '';
+    position: absolute; inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(90deg, #89AACC 0%, #4E85BF 100%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude;
+    opacity: 0; transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .grad-border:hover::before { opacity: 1; }
+
+  .glow-shadow { box-shadow: 0 0 8px rgba(137, 170, 204, 0.35); }
+
+  /* Hide initial flicker before React mounts */
+  #root:empty { background: hsl(var(--bg)); }
+</style>
+</head>
+<body class="bg-bg text-text-primary">
+  <div id="root"></div>
+
+  <script type="text/babel" src="src/components.jsx" data-presets="env,react"></script>
+  <script type="text/babel" src="src/loading.jsx" data-presets="env,react"></script>
+  <script type="text/babel" src="src/hero.jsx" data-presets="env,react"></script>
+  <script type="text/babel" src="src/projects.jsx" data-presets="env,react"></script>
+  <script type="text/babel" src="src/experience.jsx" data-presets="env,react"></script>
+  <script type="text/babel" src="src/skills.jsx" data-presets="env,react"></script>
+  <script type="text/babel" src="src/stats.jsx" data-presets="env,react"></script>
+  <script type="text/babel" src="src/contact.jsx" data-presets="env,react"></script>
+  <script type="text/babel" src="src/app.jsx" data-presets="env,react"></script>
+</body>
+</html>
