@@ -198,7 +198,7 @@ const Hero = () => {
               <span>View Projects</span>
               <span className="arrow"><ArrowRight color="#fff" /></span>
             </a>
-            <a href="uploads/vikil_11_may_2026.pdf" className="btn-secondary" download="vikil_11_may_2026.pdf">
+            <a href="uploads/vikil_12_may_2026.pdf" className="btn-secondary" download="vikil_12_may_2026.pdf">
               <Download />
               <span>Download CV</span>
               <ArrowRight size={16} className="arrow-icon" />
