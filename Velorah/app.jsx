@@ -182,7 +182,7 @@ function About() {
     {
       h: "Lead · 2025—Now",
       t: "Architecture & mentorship",
-      p: "Senior engineer at NeoSoft. Driving frontend vision across 5+ enterprise apps. 3× performance lift on the Option Chain module via custom virtualization. Mentoring engineers and interns into a craft mindset."
+      p: "Senior engineer at NeoSoft. Drove technical vision and scalable architecture across 3+ enterprise applications for the front-end team, leveraging Next.js, Node.js, and React.js — accelerated implementation and code quality through AI-assisted development with Claude Code and ChatGPT."
     },
   ];
 
@@ -379,7 +379,7 @@ function Experience() {
       when: "Jun 2025 — Now",
       role: "Senior Software Engineer",
       at: "NeoSoft Technologies",
-      detail: "Driving frontend architecture across 5+ enterprise React apps. Led a 3× performance lift on the Option Chain module via custom virtualization and API restructuring. Mentor a growing team of engineers and interns.",
+      detail: "Drove technical vision and scalable architecture across 3+ enterprise applications for the front-end team, leveraging Next.js, Node.js, and React.js — accelerated implementation and code quality through AI-assisted development with Claude Code and ChatGPT.",
     },
     {
       when: "Feb 2024 — Mar 2025",

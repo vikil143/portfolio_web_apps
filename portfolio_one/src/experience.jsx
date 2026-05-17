@@ -5,7 +5,7 @@ const EXPERIENCE = [
     period: 'Jun 2025 — Present',
     location: 'Mumbai, India',
     bullets: [
-      'Drove technical vision across 5+ enterprise React.js apps using Next.js, TypeScript, component-driven patterns.',
+      'Drove technical vision and scalable architecture across 3+ enterprise applications for the front-end team, leveraging Next.js, Node.js, and React.js — accelerated implementation and code quality through AI-assisted development with Claude Code and ChatGPT.',
       'Led 3x performance gains on Option Chain via virtualization, refactoring, and API restructuring.',
       'Mentored 3+ junior devs; enforced coding standards and architecture reviews.',
       'Built real-time WebSocket dashboards (Option Chain, Mutual Funds) and D3.js visualizations.',

@@ -249,7 +249,7 @@ const TIMELINE = [
     role: 'Senior Software Engineer',
     org: 'NeoSoft Technologies — Mumbai',
     notes: [
-      'Front-end technical vision across 5+ enterprise React apps',
+      'Drove technical vision and scalable architecture across 3+ enterprise applications for the front-end team, leveraging Next.js, Node.js, and React.js — accelerated implementation and code quality through AI-assisted development with Claude Code and ChatGPT',
       '3× perf gain on the Option Chain module via custom virtualization',
       'Mentoring 3+ junior devs; led adoption of Agentic AI tooling',
       'Real-time WebSocket dashboards for Option Chain & Mutual Funds',

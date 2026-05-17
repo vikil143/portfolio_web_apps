@@ -58,7 +58,7 @@ const EXPERIENCE = [
     role: "Senior Software Engineer",
     tag: "Current",
     bullets: [
-      <span>Drove technical vision and best practices for the front-end team across <strong>5+ enterprise React.js applications</strong>, defining scalable architecture in Next.js + TypeScript.</span>,
+      <span>Drove technical vision and scalable architecture across <strong>3+ enterprise applications</strong> for the front-end team, leveraging Next.js, Node.js, and React.js — accelerated implementation and code quality through AI-assisted development with Claude Code and ChatGPT.</span>,
       <span>Led performance work that delivered a <strong>3× improvement</strong> on the Option Chain module via component refactoring, custom virtualization, and API restructuring.</span>,
       <span>Conducted code reviews and mentored 3+ juniors and interns, enforcing standards and component-driven patterns.</span>,
       <span>Architected real-time enterprise dashboards (Option Chain, Mutual Funds) with WebSocket-based market data streaming.</span>,

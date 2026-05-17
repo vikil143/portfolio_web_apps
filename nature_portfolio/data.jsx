@@ -26,7 +26,7 @@ const EXPERIENCE = [
     location: "Mumbai, IN",
     tags: ["Next.js", "TypeScript", "D3.js", "WebSockets", "Redux"],
     highlights: [
-      "Drove technical vision across 5+ enterprise React apps; defined scalable Next.js + TS architecture and component-driven patterns.",
+      "Drove technical vision and scalable architecture across 3+ enterprise applications for the front-end team, leveraging Next.js, Node.js, and React.js — accelerated implementation and code quality through AI-assisted development with Claude Code and ChatGPT.",
       "Led performance work on the Option Chain module — 3× improvement via custom virtualization, API restructuring, and rendering profiling.",
       "Mentored 3+ junior devs and interns; enforced coding standards and ran code reviews across the team.",
       "Introduced agentic AI tooling (Claude Code, Codex) and custom virtualization libraries to lift team productivity.",
